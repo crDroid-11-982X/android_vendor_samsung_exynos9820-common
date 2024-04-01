@@ -15,7 +15,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/cass.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cass.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/teegris_v3.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris_v3.rc \
-    vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/vendor.samsung.rilchip.slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.slsi.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/wifi_brcm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_brcm.rc \
@@ -67,7 +66,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-53454d655345:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-53454d655345 \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-535355504341:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-535355504341 \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-5354494d4552:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-5354494d4552 \
-    vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-564c544b5052:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-564c544b5052 \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-64756c444152:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-64756c444152 \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-656e676d6f64:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-656e676d6f64 \
     vendor/samsung/exynos9820-common/proprietary/vendor/tee/00000000-0000-0000-0000-657365636f6d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-657365636f6d \
@@ -109,10 +107,7 @@ PRODUCT_PACKAGES += \
     libsec-ril \
     libsensorlistener \
     libskeymaster4device \
-    libstork_shared \
     libuniapi \
-    libvkmanager_vendor \
-    libvkservice \
     vendor.samsung.hardware.gnss@2.0 \
     vendor.samsung.hardware.radio-V1-ndk \
     vendor.samsung.hardware.radio.bridge-V1-ndk \
@@ -129,8 +124,7 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.widevine \
     rild \
     tzdaemon \
-    tzts_daemon \
-    vaultkeeperd
+    tzts_daemon
 
 PRODUCT_PACKAGES += \
     libGLES_mali_libOpenCL_symlink32 \
